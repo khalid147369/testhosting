@@ -1,5 +1,5 @@
 import express from "express";
-import fav from "./modules/fav.js";
+import fav from "../modules/fav.js";
 import rauth from "./middleware/authmiddleware.js";
 import multer from "multer";
 import path from "path";
