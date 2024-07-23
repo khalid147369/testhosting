@@ -211,7 +211,7 @@ app.get("/logout", (req, res, next) => {
   });
 });
 
-import fav from "./server/modules/favgoogle.js";
+import fav from "./modules/favgoogle.js";
 app.post("/favorites2", async (req, res) => {
   try {
 
