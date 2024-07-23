@@ -3,14 +3,14 @@ import express from "express";
 import mongoose from "mongoose";
 import "dotenv"
 import cors from "cors";
-import admindata from "./modules/admins.js";
+import admindata from "./server/modules/admins.js";
 import bcrypt from "bcrypt";
-import spacetoondb from "./routers/spacetoondata.js";
+import spacetoondb from "./server/routers/spacetoondata.js";
 import { body, validationResult } from "express-validator";
 import jwt from "jsonwebtoken";
-import usersdata from "./modules/users.js";
-import Favorites from "./routers/favorites.js";
-import usergoogle from "./modules/google.js";
+import usersdata from "./server/modules/users.js";
+import Favorites from "./server/routers/favorites.js";
+import usergoogle from "./server/modules/google.js";
 // ---------------google-imports
 import session from "express-session";
 import passport from "passport";
@@ -211,7 +211,7 @@ app.get("/logout", (req, res, next) => {
   });
 });
 
-import fav from "./modules/favgoogle.js";
+import fav from "./server/modules/favgoogle.js";
 app.post("/favorites2", async (req, res) => {
   try {
 
